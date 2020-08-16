@@ -5,6 +5,7 @@ export const Position = objectType({
   name: "Position",
   definition(t) {
     t.id("id");
+    t.string("location");
     t.string("title");
     t.string("company");
     t.date("startDate", {
