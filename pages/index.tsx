@@ -35,17 +35,26 @@ export default function Home() {
     return (
       <header className={styles.header}>
         <h1>Ankit Kumar</h1>
-        <h2>Fullsatck Developer</h2>
+        <h2>Fullsatck Mobile Developer</h2>
         <h2>loading...</h2>
       </header>
     );
   }
+  const { bio, positions } = data;
   return (
     <>
       <Head>
         <title>Ankit Kumar</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header className={styles.header}>
+        <h1>{bio.name}</h1>
+        <h2>{bio.tagline}</h2>
+      </header>
+      <div className={styles.split}>
+        <div className={styles.left}>Left</div>
+        <div className={styles.right}>Right</div>
+      </div>
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </>
   );

@@ -6,7 +6,20 @@
   justify-content: center;
   align-items: center;
 }
-
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.left {
+  width: 25%;
+}
+.left > pre {
+  width: 90%;
+}
+.right {
+  width: 75%;
+}
 .main {
   padding: 5rem 0;
   flex: 1;
