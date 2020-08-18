@@ -11,6 +11,8 @@ const ResumeQuery = gql`
       linkedin
       name
       tagline
+      website
+      email
     }
     positions {
       id
@@ -52,7 +54,22 @@ export default function Home() {
         <h2>{bio.tagline}</h2>
       </header>
       <div className={styles.split}>
-        <div className={styles.left}>Left</div>
+        <div className={styles.left}>
+          <h2>Contact</h2>
+          <p>
+            <strong>Email</strong>{" "}
+            <a href={`mailto:${bio.email}`}>{bio.email}</a>
+          </p>
+          <p>
+            <strong>Web</strong> <a href={bio.website}>{bio.website}</a>
+          </p>
+          <p>
+            <strong>Github</strong> <a href={bio.github}>{bio.github}</a>
+          </p>
+          <p>
+            <strong>Linkedin</strong> <a href={bio.linkedin}>{bio.linkedin}</a>
+          </p>
+        </div>
         <div className={styles.right}>Right</div>
       </div>
       <pre>{JSON.stringify(data, null, 2)}</pre>
