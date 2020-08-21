@@ -6,6 +6,7 @@ export const data = {
     github: "https://github.com/AnkitDroidGit",
     website: "https://ankitdroidgit.github.io/",
     linkedin: "https://linkedin.com/in/kumarankitkumar",
+    objective: "",
   },
   skills: [
     "Java",

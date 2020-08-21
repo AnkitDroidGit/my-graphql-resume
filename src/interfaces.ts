@@ -5,6 +5,7 @@ export interface BioInterface {
   github: string;
   website: string;
   linkedin: string;
+  objective: string;
 }
 
 export interface PositionInterface {
