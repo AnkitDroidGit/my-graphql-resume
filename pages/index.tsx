@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useQuery, gql } from "@apollo/client";
 import styles from "../styles/Home.module.css";
+import { format } from "date-fns";
 
 const ResumeQuery = gql`
   # Write your query or mutation here
@@ -13,6 +14,7 @@ const ResumeQuery = gql`
       tagline
       website
       email
+      objective
     }
     positions {
       id
@@ -73,7 +75,32 @@ export default function Home() {
             <a href={bio.linkedin}>{bio.linkedin.replace("https://", "")}</a>
           </p>
         </div>
-        <div className={styles.right}>Right</div>
+        <div className={styles.right}>
+          <h2>Objective</h2>
+          <p>{bio.objective}</p>
+          <h2>Experience</h2>
+          {positions.map((position) => {
+            const leghth = [
+              position.years > 0 ? `${position.years} years ` : null,
+              position.months > 0 ? `${position.months} months` : null,
+            ];
+            return (
+              <div key={position.id}>
+                <h3>{position.title}</h3>
+                <p className={styles.light}>
+                  {position.company} | {position.location}
+                </p>
+                <p>
+                  {format(new Date(position.startDate), "MMM yyyy")} -
+                  {position.endDate
+                    ? format(new Date(position.endDate), " MMM yyyy")
+                    : " Present"}{" "}
+                  {leghth}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </>

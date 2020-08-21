@@ -6,7 +6,8 @@ export const data = {
     github: "https://github.com/AnkitDroidGit",
     website: "https://ankitdroidgit.github.io/",
     linkedin: "https://linkedin.com/in/kumarankitkumar",
-    objective: "",
+    objective:
+      "Curious. persistent and solution oriented, A self-motivated and highly enthusiastic individual. Able to work on own initiative individually and as a part of a team. Proven leadership skills involving management, developing and motivating teams",
   },
   skills: [
     "Java",
@@ -62,8 +63,8 @@ export const data = {
       id: "2",
       title: "Middleware Engineer",
       company: "Capital Platforms",
-      startDate: "2019-05-01",
-      endDate: "2019-11-01",
+      startDate: "2018-06-01",
+      endDate: "2019-09-01",
       employmentType: "FULL_TIME",
       location: "Kuala Lumpur, Malaysia",
       achievements: [
@@ -85,8 +86,8 @@ export const data = {
       id: "3",
       title: "Senior Mobile Application Developer",
       company: "Maybank Berhad",
-      startDate: "2017-03-01",
-      endDate: "2019-05-01",
+      startDate: "2017-01-01",
+      endDate: "2018-06-01",
       employmentType: "FULL TIME",
       location: "Kuala Lumpur, Malaysia",
       achievements: [
@@ -108,8 +109,8 @@ export const data = {
       id: "4",
       title: "Lead Sofware Enginner - Android",
       company: "Parken Solution",
-      startDate: "2016-02-01",
-      endDate: "2017-03-01",
+      startDate: "2015-10-01",
+      endDate: "2016-12-01",
       employmentType: "FULL TIME",
       location: "Jaipur, India",
       achievements: [
@@ -127,10 +128,10 @@ export const data = {
     },
     {
       id: "5",
-      title: "Software Engineer - Android",
+      title: "Senior Software Engineer - Android",
       company: "Interaction One Solutions",
-      startDate: "2015-08-01",
-      endDate: "2016-02-01",
+      startDate: "2014-11-01",
+      endDate: "2015-11-01",
       employmentType: "FULL TIME",
       location: "Bangalore, India",
       achievements: [
