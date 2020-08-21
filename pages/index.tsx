@@ -1,7 +1,10 @@
 import Head from "next/head";
-import { useQuery, gql } from "@apollo/client";
+import { useQuery, gql, from } from "@apollo/client";
 import styles from "../styles/Home.module.css";
 import { format } from "date-fns";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import PrismStyle from "react-syntax-highlighter/styles/prism/xonokai";
+import { print } from "graphql/language/printer";
 
 const ResumeQuery = gql`
   # Write your query or mutation here
@@ -74,6 +77,9 @@ export default function Home() {
             <strong>Linkedin</strong>{" "}
             <a href={bio.linkedin}>{bio.linkedin.replace("https://", "")}</a>
           </p>
+          <SyntaxHighlighter language="graphql" style={PrismStyle}>
+            {print(ResumeQuery)}
+          </SyntaxHighlighter>
         </div>
         <div className={styles.right}>
           <h2>Objective</h2>
