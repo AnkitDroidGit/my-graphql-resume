@@ -81,22 +81,29 @@ export default function Home() {
           <h2>Experience</h2>
           {positions.map((position) => {
             const leghth = [
-              position.years > 0 ? `${position.years} years ` : null,
+              position.years > 0 ? `${position.years} years` : null,
               position.months > 0 ? `${position.months} months` : null,
-            ];
+            ]
+              .filter((str) => str)
+              .join(" ");
             return (
               <div key={position.id}>
                 <h3>{position.title}</h3>
                 <p className={styles.light}>
                   {position.company} | {position.location}
                 </p>
-                <p>
+                <p className={styles.light}>
                   {format(new Date(position.startDate), "MMM yyyy")} -
                   {position.endDate
                     ? format(new Date(position.endDate), " MMM yyyy")
                     : " Present"}{" "}
-                  {leghth}
+                  ({leghth})
                 </p>
+                <ul>
+                  {position.achievements.map((achievement) => (
+                    <li key={achievement}>{achievement}</li>
+                  ))}
+                </ul>
               </div>
             );
           })}
