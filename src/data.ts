@@ -45,6 +45,7 @@ export const data = {
       employmentType: "FULL TIME",
       location: "Kuala Lumpur, Malaysia",
       achievements: [
+        "Leading mobile BFF team, code review, selecting technology stack, tech spikes, implementation of major features.",
         "Building a large Node.js serverless application powering iProperty.com.my mobile apps+ GraphQL API",
         "Mentoring developers, running workshops to upskilling team, finding training opportunities on backend stuffs",
         "Development of Node.js + GraphQL and React Native applications, working with GraphQL, AWS, New Relic, Typescript, etc",
@@ -91,6 +92,14 @@ export const data = {
       employmentType: "FULL TIME",
       location: "Kuala Lumpur, Malaysia",
       achievements: [
+        "Recruitment Analysis, Designing, coding, testing and deploying software products using a wide range of technologies and platforms",
+        "UI/UX Design iOS experience with application design and user experience. Demonstrated portfolio of Android apps",
+        "Content Management and publishing on the Apple store",
+        "Project repository management in SVN/GIT and Bitbucket",
+        "Helping team in their day to day task",
+        "Project support from requirement phase to delivery of the app to play store",
+        "Working with Jira, HQALM, IBM RTC",
+        "Project repository management in IBM JAZZ and IBM RTC",
         "Building native mobile applications, both, Android and iOS, for Maybank Investment Bank",
         "Working with Android, Kotlin, Java, iOS, Swift, Firebase, interactive movile applications",
         "Leading mobile team, code review, selecting technology stack, tech spikes, implementation of major features",
